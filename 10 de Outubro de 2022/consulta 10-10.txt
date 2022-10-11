@@ -1,0 +1,12 @@
+-- select titulo from noticia
+-- select count(*) from jogo
+-- select titulo from noticia where data like '2022-10%'
+-- select titulo from noticia where data like '2022-10%' and hora between '12:00:01' and '17:59:59'
+-- select titulo from noticia where data like '2022-10%' and hora between '12:00:01' and '17:59:59' and jogo_id = (select id from jogo where nome = 'Grand Theft Auto V')
+-- select foto_capa from plataforma_jogo where plataforma_id = (select id from plataforma where nome = 'Playstation 4')  
+-- select titulo from noticia where jogo_id = (select id from jogo where nome = 'Grand Theft Auto V')
+-- select nome from jogo where categoria_id in (select id from categoria where nome = 'Aventura' or nome = 'Futebol')
+-- select nome from plataforma where id in (select plataforma_id from plataforma_jogo where jogo_id = (select id from jogo where nome = 'Diablo III'))
+-- select titulo, resumo from noticia where jogo_id  in (select id from jogo where categoria_id = (select id from categoria where nome = 'Aventura'))
+-- select titulo from noticia where jogo_id =(select jogo_id from plataforma_jogo where plataforma_id = (select id from plataforma where nome = 'Xbox One'))
+-- select count(*) from jogo where id in (select jogo_id from plataforma_jogo where plataforma_id = (select id from plataforma where nome = 'Playstation 4'))
